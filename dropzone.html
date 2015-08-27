@@ -1,0 +1,11 @@
+<template name="dropzone">
+  <div class="dropzone">
+    {{#if show}}
+      <div class="dropzone-mask"></div>
+      <div class="dropzone-overlay">
+          {{> Template.dynamic template=overlayTemplate data=data}}
+      </div>
+    {{/if}}
+    {{> Template.contentBlock}}
+  </div>
+</template>
